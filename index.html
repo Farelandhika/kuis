@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Level</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =======================
+     HALAMAN INPUT NAMA
+=========================== -->
+<div id="name-screen" class="screen active lobby">
+    <div class="card">
+        <h1 class="title">🎮 Kuis Level</h1>
+        <p class="subtitle">Masukkan nama Anda</p>
+
+        <input type="text" id="player-name" class="input-name" placeholder="Nama pemain...">
+        <button id="save-name-btn" class="btn-glow">Lanjut</button>
+    </div>
+</div>
+
+<!-- =======================
+     HALAMAN MISI HARIAN
+=========================== -->
+<div id="mission-screen" class="screen lobby">
+    <div class="card">
+        <h1 class="title">🔥 Misi Harian</h1>
+        <p id="mission-text" class="mission-text"></p>
+        <button id="choose-level-btn" class="btn-glow">Pilih Level</button>
+    </div>
+</div>
+
+<!-- =======================
+     PILIH LEVEL
+=========================== -->
+<div id="level-screen" class="screen lobby">
+    <div class="card">
+        <h1 class="title">Pilih Level</h1>
+
+        <button class="level-btn" data-level="easy">🟢 EASY</button>
+        <button class="level-btn" data-level="normal">🔵 NORMAL</button>
+        <button class="level-btn" data-level="hard">🟠 HARD</button>
+        <button class="level-btn" data-level="extreme">🔴 EXTREME</button>
+        <button class="level-btn" data-level="nightmare">☠ NIGHTMARE</button>
+
+    </div>
+</div>
+
+<!-- =======================
+     HALAMAN KUIS
+=========================== -->
+<div id="quiz-screen" class="screen">
+    <div class="card quiz-box">
+        <div class="quiz-header">
+            <span id="player-display"></span>
+            <span id="level-display"></span>
+            <span id="timer"></span>
+        </div>
+
+        <h2 id="question-text" class="question"></h2>
+
+        <div id="answer-buttons" class="answers"></div>
+    </div>
+</div>
+
+<!-- =======================
+     HALAMAN HASIL
+=========================== -->
+<div id="result-screen" class="screen">
+    <div class="card">
+        <h1>🏆 Hasil Kuis</h1>
+        <p id="final-score" class="score-text"></p>
+        <p id="mission-status"></p>
+
+        <button id="restart-btn" class="btn-glow">Main Lagi</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

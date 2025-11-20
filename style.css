@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.screen {
+    display: none;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    background: rgb(241, 241, 241);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.screen.active {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #2196f3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #0482ff;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.answer-btn {
+    padding: 12px;
+    background: #0429c1;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#player-display {
+    margin: 10px 0;
+}
+
+
+
+/* ============= */
+/* LOBBY STYLE   */
+/* ============= */
+
+body {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.lobby {
+    background: transparent;
+    box-shadow: none;
+}
+
+.card {
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    margin: auto;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: fadeIn 0.6s ease;
+}
+
+.title {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle, .mission-text {
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Input nama */
+.input-name {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.8);
+}
+
+/* Tombol glowing */
+.btn-glow {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    background: #ffffff;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+.btn-glow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(255,255,255,0.9);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
